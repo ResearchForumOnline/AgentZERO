@@ -1,4 +1,4 @@
-# Customization by Zero Team
+# Customization by Zero
 
 ZERO 🤖
 <div align="center"> <img src="https://talktoai.org/1.png" alt="Zero Banner" width="100%" /> </div> <div align="center">
