@@ -1,0 +1,10 @@
+# Customization by Zero Team
+
+{
+            "extends": "./tsconfig.json",
+            "compilerOptions": {
+                "sourceMap": true,
+                "inlineSources": true,
+                "sourceRoot": "/"
+            }
+        }

@@ -1,0 +1,13 @@
+# Customization by Zero Team
+
+{
+    "extends": "../core/tsconfig.json",
+    "compilerOptions": {
+        "outDir": "dist",
+        "rootDir": "src",
+        "strict": true
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
+}

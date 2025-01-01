@@ -1,0 +1,8 @@
+# Customization by Zero Team
+
+{
+    "name": "eliza",
+    "defaultDir": "eliza",
+    "url": "https://github.com/elizaos/eliza-starter",
+    "tar": "https://codeload.github.com/elizaos/eliza-starter/tar.gz/refs/heads/main"
+}

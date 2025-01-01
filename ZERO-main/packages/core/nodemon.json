@@ -1,0 +1,8 @@
+# Customization by Zero Team
+
+{
+    "watch": ["src"],
+    "ext": "ts",
+    "ignore": ["src/**/*.spec.ts"],
+    "exec": "node --loader ts-node/esm src/index.ts"
+}

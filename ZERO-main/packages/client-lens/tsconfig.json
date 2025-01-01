@@ -1,0 +1,14 @@
+# Customization by Zero Team
+
+{
+    "extends": "../core/tsconfig.json",
+    "compilerOptions": {
+        "jsx": "react",
+        "outDir": "dist",
+        "rootDir": "./src",
+        "strict": true
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
+}

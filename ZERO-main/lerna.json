@@ -1,0 +1,13 @@
+# Customization by Zero Team
+
+{
+  "version": "0.1.7-alpha.2",
+  "packages": [
+    "packages/*",
+    "docs",
+    "agent",
+    "client",
+    "!packages/_examples"
+  ],
+  "npmClient": "pnpm"
+}
