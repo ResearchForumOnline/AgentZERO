@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="[https://openzero.talktoai.org/zero_og_image.png](https://github.com/ResearchForumOnline/AgentZERO/blob/main/icon.svg)" width="250" height="250" alt="OpenZero Node">
+
 # 0️⃣ OPENZERO // SOVEREIGN INTELLIGENCE LATTICE
 
 
