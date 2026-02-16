@@ -61,5 +61,5 @@ If you trust the lattice, run the deployment script directly on your server:
 ```bash
 curl -sL [https://openzero.talktoai.org/install.sh](https://openzero.talktoai.org/install.sh) | bash
 
----
+
 
