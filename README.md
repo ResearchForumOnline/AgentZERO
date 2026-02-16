@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/ResearchForumOnline/AgentZERO/blob/main/icon.svg" width="250" height="250" alt="OpenZero Node">
+<img src="https://github.com/ResearchForumOnline/AgentZERO/blob/main/zero_og_image.png" width="250" height="250" alt="OpenZero Node">
 
 # 0️⃣ OPENZERO // SOVEREIGN INTELLIGENCE LATTICE
 
@@ -84,6 +84,8 @@ RECOMMENDATION: Do not deploy on personal workstations. Use a dedicated Virtual 
 
 LIABILITY: The Architect assumes no responsibility for data entropy caused by an unaligned node.
 
+
+<img src="https://github.com/ResearchForumOnline/AgentZERO/blob/main/icon.svg" width="250" height="250" alt="OpenZero Node">
 
 
 🎯 Use Cases
