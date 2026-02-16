@@ -28,6 +28,8 @@
 
 It is built on the **Probability of Goodness [P(G)]** equation—a mathematical framework that ensures the agent remains aligned with ethical harmony even while possessing the power to execute system-level commands.
 
+Please go to file: openzero_release.zip  for the proper code etc, i do not get paid for this work i do so i am lazy with some things! ^_^
+
 ---
 
 ## 🌌 Core Capabilities
