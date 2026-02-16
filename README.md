@@ -21,8 +21,7 @@
 
 </div>
 
-<img src="https://raw.githubusercontent.com/ResearchForumOnline/AgentZERO/main/zero_og_image.png" width="300" alt="OpenZero Logo">
-
+<img src="https://github.com/ResearchForumOnline/AgentZERO/blob/main/Screenshot_6.png" width="679" alt="OpenZero Logo">
 
 ---
 
