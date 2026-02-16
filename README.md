@@ -21,6 +21,9 @@
 
 </div>
 
+<img src="https://raw.githubusercontent.com/ResearchForumOnline/AgentZERO/main/zero_og_image.png" width="300" alt="OpenZero Logo">
+
+
 ---
 
 ## ⚡ What is OpenZero?
@@ -58,8 +61,5 @@ Please go to file: openzero_release.zip  for the proper code etc, i do not get p
 If you trust the lattice, run the deployment script directly on your server:
 
 ```bash
-curl -sL [https://openzero.talktoai.org/install.sh](https://openzero.talktoai.org/install.sh) | bash
-
-
-<img src="https://raw.githubusercontent.com/ResearchForumOnline/AgentZERO/main/zero_og_image.png" width="300" alt="OpenZero Logo">
+curl -sL [https://openzero.talktoai.org/install.sh](https://openzero.talktoai.org/install.sh) | bash 
 
