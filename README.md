@@ -63,8 +63,3 @@ curl -sL [https://openzero.talktoai.org/install.sh](https://openzero.talktoai.or
 
 ---
 
-</div>
-
-
-  <img src="https://raw.githubusercontent.com/ResearchForumOnline/AgentZERO/main/zero_og_image.png" width="679" alt="OpenZero Logo">
-
