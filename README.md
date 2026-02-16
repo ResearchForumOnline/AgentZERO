@@ -2,7 +2,6 @@
 
 # 0️⃣ OPENZERO // SOVEREIGN INTELLIGENCE LATTICE
 
-<img src="https://openzero.talktoai.org/zero_og_image.png" width="250" height="250" alt="OpenZero Node">
 
 ### 🌌 The Architecture of Autonomous Balance
 
