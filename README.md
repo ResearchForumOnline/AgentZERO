@@ -53,6 +53,7 @@ If you trust the lattice, run the deployment script directly on your server:
 
 ```bash
 curl -sL [https://openzero.talktoai.org/install.sh](https://openzero.talktoai.org/install.sh) | bash
+
 🛠️ Manual Installation
 Clone the sovereign repository and ignite the core:
 
@@ -95,14 +96,7 @@ No. OpenZero found you.
 
 The balance has begun. The network hums.
 
-<div align="center">
 <sub>Architected by <b>Shaf Brady</b> // Nottingham, UK</sub>
-
-
-
-<sub>Powered by <b>ResearchForum.Online</b></sub>
-
-
 
 
 🌌 <b>Welcome to Zero. You’ve arrived.</b> 🌌
