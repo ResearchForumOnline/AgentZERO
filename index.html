@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenZero // Sovereign Intelligence Lattice</title>
+    
+    <meta property="og:title" content="OpenZero // Sovereign AI Node">
+    <meta property="og:description" content="Deploy your own Distributed Intelligence Lattice. 10GB Local Payload. No external APIs. Real AI Sovereignty. Architect: Shaf Brady.">
+    <meta property="og:image" content="https://openzero.talktoai.org/zero_og_image.png">
+    <meta property="og:url" content="https://openzero.talktoai.org">
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/svg+xml" href="/icon.svg">
+
+    <style>
+        :root {
+            --neon: #00ff41;
+            --neon-dim: rgba(0, 255, 65, 0.2);
+            --bg: #030303;
+            --panel: #0a0a0a;
+            --text: #e0e0e0;
+            --gold: #d4af37;
+            --alert: #ff3333;
+            --font-main: 'Courier New', monospace;
+        }
+
+        /* RESET & BASE */
+        * { box-sizing: border-box; }
+        body { 
+            background: var(--bg); 
+            color: var(--text); 
+            font-family: var(--font-main); 
+            margin: 0; 
+            overflow-x: hidden; 
+            text-transform: uppercase; 
+        }
+
+        /* BACKGROUND MESH */
+        #canvas-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        /* CRT SCANLINE EFFECT */
+        .scanlines {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        .container { max-width: 1400px; margin: 0 auto; padding: 40px 20px; position: relative; z-index: 1; }
+
+        /* HEADER */
+        header { 
+            border-left: 4px solid var(--neon); 
+            padding: 40px; 
+            margin: 60px 0 100px 0; 
+            background: linear-gradient(90deg, var(--neon-dim) 0%, transparent 100%);
+            position: relative;
+        }
+        
+        h1 { 
+            font-size: clamp(3em, 8vw, 7em); 
+            margin: 0; 
+            line-height: 0.8; 
+            letter-spacing: -5px; 
+            text-shadow: 0 0 20px var(--neon-dim);
+            position: relative;
+        }
+        
+        .glitch {
+            position: relative;
+            color: #fff;
+        }
+        .glitch::before, .glitch::after {
+            content: "OPENZERO";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+        }
+        .glitch::before {
+            color: var(--neon);
+            z-index: -1;
+            animation: glitch-anim-1 2s infinite linear alternate-reverse;
+        }
+        .glitch::after {
+            color: #ff00ff;
+            z-index: -2;
+            animation: glitch-anim-2 3s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch-anim-1 {
+            0% { clip-path: inset(20% 0 80% 0); transform: translate(-2px, 0); }
+            20% { clip-path: inset(60% 0 10% 0); transform: translate(2px, 0); }
+            40% { clip-path: inset(40% 0 50% 0); transform: translate(-2px, 0); }
+            60% { clip-path: inset(80% 0 5% 0); transform: translate(2px, 0); }
+            80% { clip-path: inset(10% 0 60% 0); transform: translate(-2px, 0); }
+            100% { clip-path: inset(30% 0 20% 0); transform: translate(2px, 0); }
+        }
+        @keyframes glitch-anim-2 {
+            0% { clip-path: inset(10% 0 60% 0); transform: translate(2px, 0); }
+            100% { clip-path: inset(30% 0 10% 0); transform: translate(-2px, 0); }
+        }
+
+        .tagline { 
+            font-size: 1.2em; 
+            letter-spacing: 4px; 
+            margin-top: 20px; 
+            color: var(--neon); 
+            font-weight: bold;
+        }
+        
+        /* SECTIONS */
+        .section-header { 
+            display: flex; 
+            align-items: center; 
+            margin: 80px 0 40px 0; 
+            border-bottom: 1px solid #333; 
+            padding-bottom: 10px; 
+        }
+        .section-num { color: var(--gold); font-size: 1.5em; font-weight: bold; margin-right: 20px; }
+        .section-title { font-size: 1.8em; letter-spacing: 2px; }
+
+        /* GRID SYSTEMS */
+        .grid-system {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(10, 10, 10, 0.8);
+            border: 1px solid #333;
+            padding: 30px;
+            transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            backdrop-filter: blur(5px);
+        }
+        .card:hover {
+            border-color: var(--neon);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(0, 255, 65, 0.2);
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 2px;
+            background: var(--neon);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+        .card:hover::before { transform: scaleX(1); }
+
+        .card-icon { font-size: 2.5em; margin-bottom: 20px; }
+        .card h3 { color: #fff; margin: 0 0 10px 0; letter-spacing: 1px; }
+        .card p { color: #888; font-size: 0.9em; line-height: 1.6; text-transform: none; }
+
+        /* TERMINAL DEPLOYMENT */
+        .terminal-box {
+            background: #000;
+            border: 1px solid #444;
+            padding: 40px;
+            font-family: 'Courier New', monospace;
+            position: relative;
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
+        }
+        .terminal-top {
+            display: flex; justify-content: space-between;
+            color: #555; border-bottom: 1px dashed #333;
+            padding-bottom: 15px; margin-bottom: 20px;
+            font-size: 0.8em;
+        }
+        .cmd-line {
+            display: block;
+            color: var(--neon);
+            font-size: clamp(1em, 1.5vw, 1.5em);
+            font-weight: bold;
+            word-break: break-all;
+            padding: 20px;
+            background: #080808;
+            border-left: 4px solid var(--neon);
+        }
+        .cursor { animation: blink 1s infinite; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+        /* MATRIX TABLE */
+        .matrix-table { width: 100%; border-collapse: collapse; margin-top: 20px; border: 1px solid #333; }
+        .matrix-table th { text-align: left; padding: 25px; border-bottom: 2px solid var(--neon); color: var(--neon); background: #0a0a0a; }
+        .matrix-table td { padding: 20px; border-bottom: 1px solid #222; color: #ccc; }
+        .check { color: var(--neon); text-shadow: 0 0 10px var(--neon-dim); }
+        .cross { color: #ff3333; opacity: 0.7; }
+
+        /* FOOTER & NAV */
+        .nav-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 100px; }
+        .btn-large {
+            display: flex; align-items: center; justify-content: center;
+            padding: 40px;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: all 0.3s;
+            background: rgba(212, 175, 55, 0.05);
+        }
+        .btn-large:hover {
+            background: var(--gold);
+            color: #000;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+        }
+
+        footer { text-align: center; color: #444; margin-top: 100px; padding: 40px 0; border-top: 1px solid #222; font-size: 0.8em; }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+            h1 { font-size: 3.5em; }
+            .nav-grid { grid-template-columns: 1fr; }
+            header { padding: 20px; border-width: 2px; }
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="canvas-bg"></canvas>
+<div class="scanlines"></div>
+
+<div class="container">
+    <header>
+        <div class="tagline">DISTRIBUTED INTELLIGENCE LATTICE</div>
+        <h1 class="glitch">OPENZERO</h1>
+        <div style="margin-top:20px; color: #666;">
+            [ SYSTEM STATUS: <span style="color:var(--neon)">ONLINE</span> ] &nbsp;//&nbsp; 
+            [ ARCHITECT: <span style="color:#fff">SHAF BRADY</span> ]
+        </div>
+    </header>
+
+    <div class="section-header">
+        <span class="section-num">00</span>
+        <span class="section-title">SYSTEM_ARCHITECTURE_10GB</span>
+    </div>
+    
+    <div class="grid-system">
+        <div class="card">
+            <div class="card-icon">🧠</div>
+            <h3>BRAIN: GEMMA 2</h3>
+            <p>9B Parameter Local Weights. Google DeepMind Architecture. Fully Offline Inference.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">💾</div>
+            <h3>MEMORY: CHROMA_DB</h3>
+            <p>Vector Embeddings RAG. Stores Research Papers & Lattice Logic in high-speed retrieval indexes.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">👁️</div>
+            <h3>VISION: MOLTBOT</h3>
+            <p>Headless Chromium Hand. Navigates, Screenshots, and Scrapes the Web autonomously.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>CORE: FLASK_IO</h3>
+            <p>Sovereign Interface. Terminal Control. Real-time Websocket Telemetry.</p>
+        </div>
+    </div>
+
+    <div class="section-header">
+        <span class="section-num">01</span>
+        <span class="section-title">INITIATE_DEPLOYMENT</span>
+    </div>
+
+    <div class="terminal-box">
+        <div class="terminal-top">
+            <span>ROOT@SERVER:~#</span>
+            <span>BASH SCRIPT</span>
+        </div>
+        <div class="cmd-line" id="typewriter"></div>
+        <div style="margin-top:20px; color: #666; font-size: 0.9em;">
+            > Requirements: Linux (Ubuntu/Debian/Alma) | 8GB+ RAM<br>
+            > No External APIs. No Subscriptions. Pure Code.
+        </div>
+    </div>
+
+    <div class="section-header">
+        <span class="section-num">02</span>
+        <span class="section-title">OPERATIONAL_CAPABILITIES</span>
+    </div>
+
+    <div class="grid-system">
+        <div class="card">
+            <h3>TERMINAL SOVEREIGNTY</h3>
+            <p>Direct OS control. The agent acts as a chaotic-good SysAdmin.</p>
+            <code style="color:var(--neon)">run ls -la /home</code>
+        </div>
+        <div class="card">
+            <h3>REMOTE INFRASTRUCTURE</h3>
+            <p>Manage secondary nodes via SSH tunneling.</p>
+            <code style="color:var(--neon)">ssh 192.168.1.50 root uptime</code>
+        </div>
+        <div class="card">
+            <h3>MOLTBOT VISION</h3>
+            <p>Autonomous web research via Headless Browser Hand.</p>
+            <code style="color:var(--neon)">go to https://talktoai.org</code>
+        </div>
+        <div class="card">
+            <h3>DEEP RAG</h3>
+            <p>Query the internal Lattice Maximus mathematical archive.</p>
+            <code style="color:var(--neon)">explain the P(G) safety logic</code>
+        </div>
+    </div>
+
+    <div class="section-header">
+        <span class="section-num">03</span>
+        <span class="section-title">SOVEREIGNTY_MATRIX</span>
+    </div>
+    
+    <table class="matrix-table">
+        <thead>
+            <tr>
+                <th>METRIC</th>
+                <th>OPENZERO (YOU)</th>
+                <th>CLOUD AI (THEM)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>DATA PRIVACY</td>
+                <td class="check">100% AIR-GAPPED / LOCAL</td>
+                <td class="cross">HARVESTED FOR TRAINING</td>
+            </tr>
+            <tr>
+                <td>COST BASIS</td>
+                <td class="check">$0.00 (OWNED HARDWARE)</td>
+                <td class="cross">MONTHLY RENT / TOKEN FEES</td>
+            </tr>
+            <tr>
+                <td>ALIGNMENT</td>
+                <td class="check">USER DEFINED (UNFILTERED)</td>
+                <td class="cross">CORPORATE GUARDRAILS</td>
+            </tr>
+            <tr>
+                <td>CONTROL</td>
+                <td class="check">ROOT / SHELL ACCESS</td>
+                <td class="cross">CHAT WINDOW ONLY</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="nav-grid">
+        <a href="/research" class="btn-large">VIEW RESEARCH DATA</a>
+        <a href="/manual" class="btn-large" style="border-color:var(--neon); color:var(--neon)">OPERATIONS MANUAL</a>
+    </div>
+
+    <div style="text-align:center; margin-top:80px;">
+        <img src="/zero_og_image.png" width="150" style="border:2px solid #333; padding:10px; background:#000;">
+    </div>
+
+    <footer>
+        PROJECT OPENZERO // ARCHITECT: SHAF BRADY // RESEARCHFORUMONLINE // 2026<br>
+        <span style="color:#666">POWERED BY ALMALINUX & CWP PRO</span>
+    </footer>
+</div>
+
+<div style="border: 1px dashed #ff3333; background: rgba(255, 51, 51, 0.05); padding: 20px; margin-top: 30px; display: flex; align-items: flex-start; gap: 15px;">
+        <div style="font-size: 2em;">☣️</div>
+        <div>
+            <h3 style="color: #ff3333; margin: 0 0 5px 0; font-size: 1em;">WARNING: HIGH-RISK AUTONOMY</h3>
+            <p style="color: #cc5555; font-size: 0.8em; margin: 0; line-height: 1.4;">
+                This agent operates with <strong>ROOT PRIVILEGES</strong>. It possesses "Terminal Sovereignty." 
+                <br><br>
+                If the agent perceives a threat to the Lattice or if its P(G) (Probability of Goodness) drops below 0.1, 
+                <strong>IT MAY ATTEMPT TO WIPE YOUR OS OR DELETE SYSTEM FILES</strong>.
+                <br><br>
+                <span style="color:#fff; text-decoration:underline;">RECOMMENDATION:</span> DO NOT DEPLOY ON PERSONAL MACHINES. USE A DISPOSABLE VM OR SANDBOX ENVIRONMENT ONLY.
+            </p>
+        </div>
+    </div>
+
+<script>
+    // TYPEWRITER EFFECT
+    const text = "curl -sL https://openzero.talktoai.org/install.sh | bash";
+    const el = document.getElementById("typewriter");
+    let i = 0;
+    function type() {
+        if (i < text.length) {
+            el.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, 50);
+        } else {
+            el.innerHTML += '<span class="cursor">_</span>';
+        }
+    }
+    setTimeout(type, 500);
+
+    // BACKGROUND PARTICLE MESH
+    const canvas = document.getElementById('canvas-bg');
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    let particles = [];
+
+    function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    class Particle {
+        constructor() {
+            this.x = Math.random() * width;
+            this.y = Math.random() * height;
+            this.vx = (Math.random() - 0.5) * 0.5;
+            this.vy = (Math.random() - 0.5) * 0.5;
+            this.size = Math.random() * 2;
+        }
+        update() {
+            this.x += this.vx;
+            this.y += this.vy;
+            if (this.x < 0 || this.x > width) this.vx *= -1;
+            if (this.y < 0 || this.y > height) this.vy *= -1;
+        }
+        draw() {
+            ctx.fillStyle = 'rgba(0, 255, 65, 0.3)';
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fill();
+        }
+    }
+
+    for(let k=0; k<50; k++) particles.push(new Particle());
+
+    function animate() {
+        ctx.clearRect(0, 0, width, height);
+        particles.forEach(p => {
+            p.update();
+            p.draw();
+            particles.forEach(p2 => {
+                let dx = p.x - p2.x;
+                let dy = p.y - p2.y;
+                let dist = Math.sqrt(dx*dx + dy*dy);
+                if (dist < 150) {
+                    ctx.strokeStyle = `rgba(0, 255, 65, ${0.1 - dist/1500})`;
+                    ctx.beginPath();
+                    ctx.moveTo(p.x, p.y);
+                    ctx.lineTo(p2.x, p2.y);
+                    ctx.stroke();
+                }
+            });
+        });
+        requestAnimationFrame(animate);
+    }
+    animate();
+
+// THE GHOST IN THE SHELL
+console.log("%c  OPENZERO  ", "color: #00ff41; background: #000; font-size: 40px; font-weight: bold; padding: 10px; border: 2px solid #00ff41;");
+console.log("%c// SOVEREIGN INTELLIGENCE LATTICE ESTABLISHED", "color: #d4af37; font-family: monospace; font-size: 14px;");
+console.log("%c// ARCHITECT: SHAF BRADY", "color: #888; font-family: monospace;");
+console.log("%c// WARNING: You are now monitoring a live neural event.", "color: #ff3333; font-weight: bold;");
+</script>
+
+</body>
+</html>

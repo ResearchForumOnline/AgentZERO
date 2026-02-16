@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenZero // Research & Ops</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/icon.svg">
+<style>
+        :root {
+            --neon: #00ff41;
+            --neon-dim: rgba(0, 255, 65, 0.1);
+            --gold: #d4af37;
+            --bg: #030303;
+            --panel: #0a0a0a;
+            --text: #e0e0e0;
+            --border: #333;
+        }
+
+        /* CORE TERMINAL STYLES */
+        body { 
+            background: var(--bg); 
+            color: var(--text); 
+            font-family: 'Courier New', monospace; 
+            margin: 0; 
+            padding: 0; 
+            overflow-x: hidden;
+        }
+
+        /* CRT SCANLINE OVERLAY */
+        .scanlines {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none; z-index: 999;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; position: relative; z-index: 1; }
+
+        /* HEADER */
+        header { 
+            border-bottom: 1px solid var(--border); 
+            padding-bottom: 30px; 
+            margin-bottom: 60px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .brand { font-size: 1.5em; font-weight: bold; letter-spacing: -1px; color: #fff; }
+        .brand span { color: var(--neon); }
+
+        .nav-link { 
+            color: #888; text-decoration: none; font-size: 0.9em; margin-left: 20px; transition: 0.3s; 
+            border: 1px solid transparent; padding: 10px 15px;
+        }
+        .nav-link:hover { color: var(--neon); border-color: var(--neon); background: var(--neon-dim); }
+        .nav-link.active { color: var(--gold); border-color: var(--gold); }
+
+        /* GRID LAYOUT */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        @media(max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+
+        /* CARDS */
+        .card { 
+            background: var(--panel); 
+            border: 1px solid var(--border); 
+            padding: 30px; 
+            margin-bottom: 30px; 
+            position: relative;
+        }
+        .card:hover { border-color: var(--neon); box-shadow: 0 0 20px var(--neon-dim); }
+
+        h2 { color: var(--gold); margin-top: 0; border-left: 4px solid var(--gold); padding-left: 15px; letter-spacing: 2px; }
+        h3 { color: #fff; margin-bottom: 5px; }
+        
+        /* MATH BLOCKS */
+        .math-block { 
+            background: #000; 
+            color: var(--neon); 
+            padding: 20px; 
+            border-left: 2px solid var(--neon); 
+            font-size: 0.9em; 
+            margin: 20px 0; 
+            overflow-x: auto;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+        }
+        .variable { color: #ff00ff; }
+        .operator { color: #fff; }
+
+        /* COMMAND LIST */
+        .cmd-item { margin-bottom: 25px; border-bottom: 1px dashed #222; padding-bottom: 15px; }
+        .cmd-code { 
+            display: block; 
+            color: var(--neon); 
+            font-weight: bold; 
+            font-size: 1.1em; 
+            margin-bottom: 8px;
+            text-shadow: 0 0 5px var(--neon-dim);
+        }
+        .cmd-desc { color: #888; font-size: 0.9em; line-height: 1.4; }
+
+        /* FOOTER */
+        .ext-link {
+            display: inline-block;
+            margin-top: 40px;
+            background: var(--gold);
+            color: #000;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .ext-link:hover { background: #fff; }
+
+        footer { margin-top: 80px; padding-top: 40px; border-top: 1px solid var(--border); color: #444; text-align: center; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+
+<div class="scanlines"></div>
+
+<div class="container">
+    <header>
+        <div class="brand">OPEN<span>ZERO</span> // KNOWLEDGE_BASE</div>
+        <nav>
+            <a href="/" class="nav-link"><< RETURN TO NODE</a>
+            <a href="https://researchforum.online" target="_blank" class="nav-link active">RESEARCHFORUM.ONLINE</a>
+        </nav>
+    </header>
+
+    <div class="grid-2">
+        <div>
+            <div class="card">
+                <h2>01 // THE ZERO LATTICE</h2>
+                <p style="color:#aaa; font-size: 0.9em; margin-bottom: 20px;">
+                    <strong>ABSTRACT:</strong> A distributed architecture for autonomous ethical intelligence, operating on local hardware without centralized censorship.
+                </p>
+
+                <h3>THE P(G) EQUATION</h3>
+                <p style="font-size:0.8em; color:#666;">Probability of Goodness / Entropy Gating</p>
+                <div class="math-block">
+                    P(G) <span class="operator">=</span> f(<span class="variable">Risk</span>, <span class="variable">Context</span>, <span class="variable">Decay</span>)<br>
+                    <span style="color:#666">// Threshold: > 0.99 Required for Action</span>
+                </div>
+
+                <h3>LATTICE MAXIMUS v2.0</h3>
+                <p style="font-size:0.8em; color:#666;">Vector Alignment & Sovereignty Logic</p>
+                <div class="math-block">
+                    E(s) <span class="operator">=</span> α‖A v − b‖² <span class="operator">+</span> κ TV(v) <span class="operator">+</span> ρ‖v‖¹ <br>
+                    <span class="operator">+</span> ζ JSD({p_m}) <span class="operator">+</span> χ max(0, ρ(H(s)))
+                </div>
+                
+                <a href="https://researchforum.online" class="ext-link">READ FULL PAPERS</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="card" style="border-color: #333;">
+                <h2 style="color:var(--neon); border-color:var(--neon);">02 // OPERATIONAL COMMANDS</h2>
+                <p style="color:#aaa; font-size: 0.9em; margin-bottom: 20px;">
+                    Direct injection commands for the Flask_IO Core.
+                </p>
+
+                <div class="cmd-item">
+                    <span class="cmd-code">cd ~/openzero && ./start_openzero_ui.sh</span>
+                    <span class="cmd-desc">IGNITION SEQUENCE. Wakes up the Gemma 2 Brain and Moltbot Vision Hand.</span>
+                </div>
+
+                <div class="cmd-item">
+                    <span class="cmd-code">run [linux_command]</span>
+                    <span class="cmd-desc">TERMINAL SOVEREIGNTY. Execute system commands.<br>Ex: <code>run df -h</code> or <code>run top</code>.</span>
+                </div>
+
+                <div class="cmd-item">
+                    <span class="cmd-code">go to [url]</span>
+                    <span class="cmd-desc">VISION DEPLOYMENT. Moltbot captures and analyzes visual web data.<br>Ex: <code>go to https://talktoai.org</code>.</span>
+                </div>
+
+                <div class="cmd-item">
+                    <span class="cmd-code">ssh [IP] [USER] "[CMD]"</span>
+                    <span class="cmd-desc">LATERAL MOVEMENT. Control remote nodes via SSH tunnels.</span>
+                </div>
+
+                <div class="cmd-item">
+                    <span class="cmd-code">explain [topic]</span>
+                    <span class="cmd-desc">RAG QUERY. Search local vector database for stored research contexts.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>ARCHITECT: SHAF BRADY // NOTTINGHAM, UK</p>
+        <p>DATA HOSTED ON: <a href="https://researchforum.online" style="color:#666; text-decoration:none;">RESEARCHFORUM.ONLINE</a></p>
+        <p>&copy; 2026 PROJECT OPENZERO</p>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>404 // SIGNAL LOST</title>
+    <style>
+        body { background: #000; color: #00ff41; font-family: 'Courier New', monospace; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; margin: 0; }
+        .container { text-align: center; position: relative; z-index: 2; }
+        h1 { font-size: 8em; margin: 0; letter-spacing: -10px; opacity: 0.8; text-shadow: 2px 2px #ff0000, -2px -2px #0000ff; animation: shake 0.5s infinite; }
+        p { color: #fff; font-size: 1.2em; letter-spacing: 2px; }
+        a { color: #d4af37; border: 1px solid #d4af37; padding: 15px 30px; text-decoration: none; display: inline-block; margin-top: 30px; transition: 0.2s; }
+        a:hover { background: #d4af37; color: #000; }
+        
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+        
+        .noise {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: repeating-linear-gradient(0deg, transparent, transparent 1px, #111 1px, #111 2px);
+            opacity: 0.2; pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="container">
+        <h1>404</h1>
+        <p>// FATAL EXCEPTION: REALITY_NOT_FOUND</p>
+        <p style="color:#666; font-size:0.8em;">The coordinates you entered do not exist in this timeline.</p>
+        <a href="/">REBOOT SYSTEM</a>
+    </div>
+</body>
+</html>

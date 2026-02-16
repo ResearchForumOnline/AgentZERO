@@ -1,0 +1,42 @@
+# OPENZERO NODE CONFIGURATION // SHAF BRADY
+# ---------------------------------------------------
+
+# 1. SECURITY: Hide Directory Lists (Privacy)
+# Prevents strangers from seeing a list of your files if they guess a folder name.
+Options -Indexes
+
+# 2. ERROR HANDLING: Glitch Mode
+# Links your custom 404.html so errors look cool.
+ErrorDocument 404 /404.html
+
+# 3. REWRITE ENGINE (Clean URLs)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Force HTTPS (Sovereign Security)
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Map /research -> research.html
+    RewriteRule ^research$ research.html [L]
+
+    # Map /manual -> manual.html
+    RewriteRule ^manual$ manual.html [L]
+    
+    # Block access to dotfiles (like .git or .env) for safety
+    # (Excluding .well-known for SSL renewal)
+    RewriteRule "(^|/)\.(?!well-known)" - [F]
+</IfModule>
+
+# 4. BROWSER CACHING (Performance)
+# Makes the particles and neon loads instant on return visits.
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+</IfModule>
