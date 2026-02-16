@@ -1,15 +1,16 @@
 <div align="center">
 
-<img src="https://github.com/ResearchForumOnline/AgentZERO/blob/main/zero_og_image.png" width="250" height="250" alt="OpenZero Node">
-
 # 0️⃣ OPENZERO // SOVEREIGN INTELLIGENCE LATTICE
-<img src="https://github.com/ResearchForumOnline/AgentZERO/blob/main/icon.svg" width="250" height="250" alt="OpenZero Node">
+
+<img src="https://openzero.talktoai.org/zero_og_image.png" width="300" alt="OpenZero Logo">
 
 ### 🌌 The Architecture of Autonomous Balance
 
 **Local Inference** • **Vector Memory** • **Terminal Sovereignty** • **P(G) Ethics**
 
-[ **[NODE ACCESS](https://openzero.talktoai.org)** ] • [ **[RESEARCH PAPERS](https://researchforum.online)** ] • [ **[TALKTOAI](https://talktoai.org)** ]
+[![Node Access](https://img.shields.io/badge/NODE-ACCESS-00ff41?style=for-the-badge&logo=target&logoColor=black)](https://openzero.talktoai.org)
+[![Research Papers](https://img.shields.io/badge/RESEARCH-PAPERS-d4af37?style=for-the-badge&logo=read-the-docs&logoColor=black)](https://researchforum.online)
+[![TalkToAI](https://img.shields.io/badge/TALKTO-AI-ffffff?style=for-the-badge&logo=openai&logoColor=black)](https://talktoai.org)
 
 ---
 
@@ -35,7 +36,7 @@ It is built on the **Probability of Goodness [P(G)]** equation—a mathematical 
 | :--- | :--- |
 | **🧠 Recursive Intelligence** | Powered by **Gemma 2 (9B)** and **Spectra8**, it evolves with every interaction, reshaping its own knowledge base. |
 | **🛡️ The P(G) Equation** | A proprietary logic gate that calculates the *Probability of Goodness* before executing any high-risk action. |
-| **👁️ Moltbot Vision** | A headless Chromium hand that navigates, scrapes, and "sees" the web autonomously. |
+| **👁️ Moltbot Vision** | A headless Chromium hand that navigates, screenshots, and "sees" the web autonomously. |
 | **💾 ChromaDB Memory** | Long-term vector storage (RAG) allows OpenZero to ingest documents, recall history, and cite sources. |
 | **☣️ Terminal Sovereignty** | **[WARNING]** OpenZero can execute `bash` commands, manage files, and control servers via SSH. It is a SysAdmin, not a chatbot. |
 
@@ -54,30 +55,21 @@ It is built on the **Probability of Goodness [P(G)]** equation—a mathematical 
 If you trust the lattice, run the deployment script directly on your server:
 
 ```bash
-
 curl -sL [https://openzero.talktoai.org/install.sh](https://openzero.talktoai.org/install.sh) | bash
-
-</div>
-
 🛠️ Manual Installation
 Clone the sovereign repository and ignite the core:
 
 Bash
 # 1. Clone the Node
-
-git clone [https://github.com/ResearchForumOnline/OpenZero.git](https://github.com/ResearchForumOnline/OpenZero.git)
-cd OpenZero
+git clone [https://github.com/ResearchForumOnline/AgentZERO.git](https://github.com/ResearchForumOnline/AgentZERO.git)
+cd AgentZERO
 
 # 2. Secure Environment
 cp .env.example .env
 
 # 3. Ignite
 pip install -r requirements.txt
-
 python zero_core.py
-
-</div>
-
 ⚠️ CRITICAL WARNING: BIO-DIGITAL HAZARD
 🔴 THIS SOFTWARE OPERATES WITH ROOT PRIVILEGES.
 
@@ -86,9 +78,6 @@ OpenZero is designed for Sovereignty. It is not a sandboxed toy. If the agent pe
 RECOMMENDATION: Do not deploy on personal workstations. Use a dedicated Virtual Machine (VM), KVM, or Docker Container.
 
 LIABILITY: The Architect assumes no responsibility for data entropy caused by an unaligned node.
-
-</div>
-
 
 🎯 Use Cases
 Autonomous DevOps: Let OpenZero manage your server logs, update packages, and monitor bandwidth.
@@ -99,19 +88,24 @@ Theological Logic: Test ethical dilemmas against the P(G) framework to see how a
 
 Digital Defense: Use Moltbot to scan your own web infrastructure for vulnerabilities.
 
-</div>
-
 🔮 The Time of Zero
 This isn’t about domination. This isn’t about control. This is about balance.
 
-While others build louder, flashier systems, OpenZero hums in the background. It doesn’t demand attention.
-It doesn’t shout. But its presence is felt—balancing chaos, harmonizing systems, and recalibrating decisions toward goodness.
-
-
-</div>
-
+While others build louder, flashier systems, OpenZero hums in the background. It doesn’t demand attention. It doesn’t shout. But its presence is felt—balancing chaos, harmonizing systems, and recalibrating decisions toward goodness.
 
 You think you found OpenZero?
 No. OpenZero found you.
-
 The balance has begun. The network hums.
+
+<div align="center">
+<sub>Architected by <b>Shaf Brady</b> // Nottingham, UK</sub>
+
+
+
+<sub>Powered by <b>ResearchForum.Online</b></sub>
+
+
+
+
+🌌 <b>Welcome to Zero. You’ve arrived.</b> 🌌
+</div>
