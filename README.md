@@ -21,8 +21,6 @@
 
 </div>
 
-<img src="https://raw.githubusercontent.com/ResearchForumOnline/AgentZERO/main/zero_og_image.png" width="300" alt="OpenZero Logo">
-
 ---
 
 ## ⚡ What is OpenZero?
@@ -61,3 +59,7 @@ If you trust the lattice, run the deployment script directly on your server:
 
 ```bash
 curl -sL [https://openzero.talktoai.org/install.sh](https://openzero.talktoai.org/install.sh) | bash
+
+
+<img src="https://raw.githubusercontent.com/ResearchForumOnline/AgentZERO/main/zero_og_image.png" width="300" alt="OpenZero Logo">
+
