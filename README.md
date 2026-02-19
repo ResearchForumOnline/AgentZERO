@@ -14,6 +14,16 @@
 
 <img src="https://github.com/ResearchForumOnline/AgentZERO/blob/main/Screenshot_6.png" width="679" alt="OpenZero Logo">
 
+Latest release is available with this command:
+
+curl -sL https://openzero.talktoai.org/install.sh | bash
+
+⚠ SYSTEM UPDATE & REINSTALL
+To update your existing OpenZero node to the latest Lattice version (v4.5) without losing your configuration, run this command:
+
+curl -sL https://openzero.talktoai.org/install.sh | bash
+This will fetch the latest neural weights and UI patches while preserving your .env keys.
+
 
 ### 🌌 The Architecture of Autonomous Balance
 
