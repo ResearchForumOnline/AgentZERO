@@ -26,7 +26,55 @@ This will fetch the latest neural weights and UI patches while preserving your .
 
 <div>
   
-The perfect setuop would be rent a vps or vm from digital ocean or ovh.com or [xhost](https://xhosts.uk/) install Linux Mint, enable RDP, and you got the exact same setup as me!
+🚀 The Optimal OpenZero Environment
+To get the most out of OpenZero, we highly recommend replicating the core development environment: a dedicated Virtual Private Server (VPS) or Virtual Machine (VM) running Linux Mint with Remote Desktop Protocol (RDP) enabled.
+
+This configuration gives you a robust, isolated, and easily accessible graphical workspace tailored for advanced AI research and seamless deployment.
+
+1. Provision Your Infrastructure
+Start by renting a VPS or VM. You need a reliable provider that allows custom OS installations or provides Linux Mint templates. Recommended providers include:
+
+xhosts.uk
+
+DigitalOcean
+
+OVHcloud
+
+2. Install Linux Mint & Enable RDP
+Once your server is provisioned with Linux Mint, you will need to enable RDP to access the desktop environment remotely from your local machine (Windows, macOS, or Linux).
+
+Connect to your new server via SSH and execute the following commands to install and configure xrdp, the standard open-source RDP server:
+
+Bash
+# Update your package list
+sudo apt update
+
+# Install the XRDP package
+sudo apt install xrdp -y
+
+# Enable XRDP to start automatically on boot
+sudo systemctl enable xrdp
+
+# Start the XRDP service
+sudo systemctl start xrdp
+
+# (Optional) If you have the UFW firewall enabled, open port 3389 for RDP traffic
+sudo ufw allow 3389/tcp
+3. Connect via RDP
+With XRDP running, open your preferred Remote Desktop Client (e.g., Windows Remote Desktop Connection, Remmina for Linux, or Microsoft Remote Desktop for macOS).
+
+Enter your server's public IP address.
+
+Connect and log in using your Linux Mint credentials.
+
+You now have the exact same setup used to build OpenZero!
+
+4. Install OpenZero
+Once you are logged into your Linux Mint RDP session, open a terminal window within the desktop environment and run the automated installation script:
+
+Bash
+curl -sL https://openzero.talktoai.org/install.sh | bash
+This script will handle the dependencies and configure OpenZero on your machine. Once the installation completes, your environment is fully primed and ready for action.
 
 </div>
 
