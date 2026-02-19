@@ -24,6 +24,10 @@ To update your existing OpenZero node to the latest Lattice version (v4.5) witho
 curl -sL https://openzero.talktoai.org/install.sh | bash
 This will fetch the latest neural weights and UI patches while preserving your .env keys.
 
+//////////////////
+The perfect setuop would be rent a vps or vm from digital ocean or ovh.com or [xhost](https://xhosts.uk/) install Linux Mint, enable RDP, and you got the exact same setup as me!
+
+/////////////////
 
 ### 🌌 The Architecture of Autonomous Balance
 
