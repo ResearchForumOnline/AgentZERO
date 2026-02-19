@@ -22,6 +22,7 @@ curl -sL https://openzero.talktoai.org/install.sh | bash
 To update your existing OpenZero node to the latest Lattice version (v4.5) without losing your configuration, run this command:
 
 curl -sL https://openzero.talktoai.org/install.sh | bash
+
 This will fetch the latest neural weights and UI patches while preserving your .env keys.
 
 <div>
@@ -58,8 +59,11 @@ sudo systemctl enable xrdp
 # Start the XRDP service
 sudo systemctl start xrdp
 
-# (Optional) If you have the UFW firewall enabled, open port 3389 for RDP traffic
+# (Optional but you should use ufw and enable it or risk being hacked for fun by bots) 
+If you have the UFW firewall enabled, open port 3389 for RDP traffic
+
 sudo ufw allow 3389/tcp
+
 3. Connect via RDP
 With XRDP running, open your preferred Remote Desktop Client (e.g., Windows Remote Desktop Connection, Remmina for Linux, or Microsoft Remote Desktop for macOS).
 
@@ -73,7 +77,9 @@ You now have the exact same setup used to build OpenZero!
 Once you are logged into your Linux Mint RDP session, open a terminal window within the desktop environment and run the automated installation script:
 
 Bash
+
 curl -sL https://openzero.talktoai.org/install.sh | bash
+
 This script will handle the dependencies and configure OpenZero on your machine. Once the installation completes, your environment is fully primed and ready for action.
 
 </div>
