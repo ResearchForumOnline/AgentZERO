@@ -126,4 +126,4 @@ pm2 logs - Watch the live matrix feed of the AI's internal thought process.
 Deploy the entire lattice, including the Node.js Vision systems and Python Brain, with a single command:
 
 ```bash
-curl -sL [https://openzero.talktoai.org/install.sh](https://openzero.talktoai.org/install.sh) | bash
+curl -sL https://openzero.talktoai.org/install.sh | bash
