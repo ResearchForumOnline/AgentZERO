@@ -10,6 +10,7 @@
 
 [![Node Access](https://img.shields.io/badge/NODE_ACCESS-00ff41?style=for-the-badge&logo=linux&logoColor=black)](https://openzero.talktoai.org)
 [![ZeroMint OS](https://img.shields.io/badge/ZEROMINT_OS-d4af37?style=for-the-badge&logo=ubuntu&logoColor=black)](https://openzero.talktoai.org/ZeroMint_OS_v1.0.iso)
+[![Magnet Link](https://img.shields.io/badge/MAGNET_LINK-00ff41?style=for-the-badge&logo=bittorrent&logoColor=black)](magnet:?xt=urn:btih:d868c13cb1c72ad47020c1808eefdef4eb5fb594&dn=ZeroMint_OS_v1.0.iso&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce)
 [![Research Papers](https://img.shields.io/badge/RESEARCH_PAPERS-ffffff?style=for-the-badge&logo=read-the-docs&logoColor=black)](https://researchforum.online)
 
 > *"OpenZero is not just a tool. It is a presence. A quiet force woven into the fabric of your local infrastructure, representing the convergence of recursive intelligence and mathematical ethics."* <br>
