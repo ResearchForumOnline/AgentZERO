@@ -3,7 +3,7 @@
 # 0️⃣ OPENZERO // SOVEREIGN INTELLIGENCE LATTICE
 
 <p align="center">
-  <img src="https://github.com/ResearchForumOnline/AgentZERO/blob/main/Screenshot_21.png" width="800" alt="OpenZero Super Panel">
+  <img src="[https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_21.png](https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_21.png)" width="800" alt="OpenZero Super Panel">
 </p>
 
 **Local Inference** • **Vector Memory** • **Terminal Sovereignty** • **$P(G)$ Ethics**
@@ -46,8 +46,6 @@ Why install dependencies when you can flash the entire architecture? **ZeroMint 
 
 ## 🌌 Core Capabilities
 
-
-
 | Feature | Description |
 | :--- | :--- |
 | **🧠 Recursive Intelligence** | Powered by **Gemma 2 (9B)** (Local) or **Groq LPUs** (Cloud). Evolves with every interaction. |
@@ -67,7 +65,7 @@ If you already have a Linux server (Ubuntu/Debian/AlmaLinux/Mint) with at least 
 Deploy the entire lattice, including the Node.js Vision systems and Python Brain, with a single command:
 
 ```bash
-curl -sL [https://openzero.talktoai.org/install.sh](https://openzero.talktoai.org/install.sh) | bash
+curl -sL https://openzero.talktoai.org/install.sh | bash
 🔄 Updating the Node
 OpenZero receives constant upgrades. To update your existing node to the latest Lattice version without losing your configuration or .env keys, simply re-run the installation command above.
 
@@ -112,16 +110,18 @@ pm2 restart all - Master reset for both the Brain and Vision systems.
 
 pm2 logs - Watch the live matrix feed of the AI's internal thought process.
 
+📸 System Interface
 <div align="center">
-<img src="https://github.com/ResearchForumOnline/AgentZERO/blob/main/Screenshot_18.png" width="400" alt="UI Element 1">
-<img src="https://github.com/ResearchForumOnline/AgentZERO/blob/main/Screenshot_20.png" width="400" alt="UI Element 2">
+<img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_18.png" width="400" alt="UI Element 1">
+<img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_20.png" width="400" alt="UI Element 2">
 
 
 
-<img src="https://github.com/ResearchForumOnline/AgentZERO/blob/main/Screenshot_22.png" width="400" alt="UI Element 3">
-<img src="https://github.com/ResearchForumOnline/AgentZERO/blob/main/Screenshot_23.png" width="400" alt="UI Element 4">
+<img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_22.png" width="400" alt="UI Element 3">
+<img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_23.png" width="400" alt="UI Element 4">
 
 
 
-<img src="https://github.com/ResearchForumOnline/AgentZERO/blob/main/Screenshot_6.png" width="804" alt="Terminal Logs">
+
+<img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_6.png" width="804" alt="Terminal Logs">
 </div>
