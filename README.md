@@ -3,7 +3,7 @@
 # 0️⃣ OPENZERO // SOVEREIGN INTELLIGENCE LATTICE
 
 <p align="center">
-  <img src="[https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_21.png](https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_21.png)" width="800" alt="OpenZero Super Panel">
+  <img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_21.png" width="800" alt="OpenZero Super Panel">
 </p>
 
 **Local Inference** • **Vector Memory** • **Terminal Sovereignty** • **$P(G)$ Ethics**
@@ -65,63 +65,4 @@ If you already have a Linux server (Ubuntu/Debian/AlmaLinux/Mint) with at least 
 Deploy the entire lattice, including the Node.js Vision systems and Python Brain, with a single command:
 
 ```bash
-curl -sL https://openzero.talktoai.org/install.sh | bash
-🔄 Updating the Node
-OpenZero receives constant upgrades. To update your existing node to the latest Lattice version without losing your configuration or .env keys, simply re-run the installation command above.
-
-🖥️ The Optimal Environment (DIY RDP Server)
-To get the absolute most out of OpenZero, we highly recommend replicating the core development environment: a dedicated Virtual Private Server (VPS) or Virtual Machine (VM) running Linux Mint with Remote Desktop Protocol (XRDP) enabled.
-
-This gives you a robust, isolated graphical workspace tailored for advanced AI research.
-
-Step 1: Provision Your Infrastructure
-Rent a VPS or VM. You need a reliable provider that allows custom OS installations or provides Linux Mint templates. (We run OpenZero on 32GB KVM nodes).
-
-Step 2: Install XRDP (Remote Desktop)
-Connect to your new server via SSH and execute the following commands to install xrdp, allowing you to see the graphical desktop from anywhere in the world:
-
-Bash
-# Update your package list
-sudo apt update
-
-# Install the XRDP package
-sudo apt install xrdp -y
-
-# Enable XRDP to start automatically on boot
-sudo systemctl enable xrdp
-sudo systemctl start xrdp
-
-# Configure the firewall to allow RDP traffic (Crucial for security)
-sudo ufw allow 3389/tcp
-sudo ufw reload
-Step 3: Connect & Deploy
-Open your preferred Remote Desktop Client (Windows RDC, Remmina, etc.).
-
-Enter your server's public IP address and log in.
-
-Open a terminal inside the desktop and run the 1-Click Installer.
-
-🎛️ Lattice Management (PM2)
-OpenZero runs silently in the background using the PM2 process manager. Use these commands in your terminal to control the AI:
-
-pm2 status - View the health, CPU, and RAM usage of the agent.
-
-pm2 restart all - Master reset for both the Brain and Vision systems.
-
-pm2 logs - Watch the live matrix feed of the AI's internal thought process.
-
-📸 System Interface
-<div align="center">
-<img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_18.png" width="400" alt="UI Element 1">
-<img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_20.png" width="400" alt="UI Element 2">
-
-
-
-<img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_22.png" width="400" alt="UI Element 3">
-<img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_23.png" width="400" alt="UI Element 4">
-
-
-
-
-<img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_6.png" width="804" alt="Terminal Logs">
-</div>
+curl -sL [https://openzero.talktoai.org/install.sh](https://openzero.talktoai.org/install.sh) | bash
