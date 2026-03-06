@@ -35,7 +35,7 @@ It is governed by the proprietary **Probability of Goodness $P(G)$** equation—
 Why install dependencies when you can flash the entire architecture? **ZeroMint OS** is our custom, highly-optimized operating system built on Linux Mint 22.3 Cinnamon. The OpenZero Lattice, Ollama Neural Engine, PM2 Process Manager, and Remote Desktop (XRDP) are permanently baked into the silicon.
 
 ### How to Deploy ZeroMint OS:
-1. **Download the ISO:** [ZeroMint_OS_v1.0.iso (3.2GB)](https://openzero.talktoai.org/ZeroMint_OS_v1.0.iso)
+1. **Download the ISO:** [ZeroMint_OS_v1.0.iso (5.9GB)](https://openzero.talktoai.org/ZeroMint_OS_v1.0.iso)
 2. **Flash to USB:** Use [Rufus](https://rufus.ie/) (Windows) or [BalenaEtcher](https://etcher.balena.io/) (Mac/Linux) to write the ISO to an 8GB+ USB drive.
 3. **Boot & Install:** Plug it into any old PC or laptop and boot from USB.
 4. **Default Credentials:** Once installed, log in with:
