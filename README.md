@@ -26,6 +26,11 @@
 
 It is governed by the proprietary **Probability of Goodness $P(G)$** equation—a mathematical logic gate ensuring the agent remains aligned with ethical harmony, even while possessing the raw power to execute system-level bash commands on your server.
 
+HiveMind has been added and much more, the latest version is at openzero.talktoai.org on any linux machine.
+Deploy the entire lattice, including the Node.js Vision systems and Python Brain, with a single command:
+
+curl -sL https://openzero.talktoai.org/install.sh | bash
+
 > **Architect's Note:** I do this research and build these frameworks for free. If you want to skip the source-code compilation, grab the pre-compiled `openzero_release.zip` or the full ZeroMint OS image below! ^_^
 
 ---
