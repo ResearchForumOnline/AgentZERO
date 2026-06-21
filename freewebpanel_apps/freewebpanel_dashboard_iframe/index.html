@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeWebPanel Dashboard</title>
+    <style>
+        /* Simple CSS to remove default margins and allow the iframe to fill the page */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: calc(100% - 1.5rem);
+        }
+        header {
+            background-color: #0f4c81;
+            color: #fff;
+            padding: 0.75rem 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FreeWebPanel Embedded Dashboard</h1>
+    </header>
+    <!--
+        This page embeds the FreeWebPanel control panel. You can load this app in an iframe-friendly environment like
+        a custom dashboard or web hosting provider to manage your domains and hosting via FreeWebPanel. Make sure that
+        cross-domain embedding is allowed. FreeWebPanel offers a free web hosting control panel for managing domains,
+        DNS, SSL certificates and hosting accounts in one place.
+    -->
+    <iframe src="https://freewebpanel.com" title="FreeWebPanel Dashboard"></iframe>
+</body>
+</html>
