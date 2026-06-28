@@ -1,135 +1,142 @@
-<div align="center">
+# AgentZERO / OpenZero AIOS
 
-# 0️⃣ OPENZERO // SOVEREIGN INTELLIGENCE LATTICE
+<div align="center">
+  <img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_21.png" width="800" alt="OpenZero control panel screenshot">
+</div>
 
 <p align="center">
-  <img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_21.png" width="800" alt="OpenZero Super Panel">
+  <a href="https://openzero.talktoai.org/">OpenZero AIOS</a> |
+  <a href="https://talktoai.org/">TalkToAI</a> |
+  <a href="https://research.talktoai.org/">Research</a> |
+  <a href="https://github.com/ResearchForumOnline/ZEROtalktoai">Project Hub</a>
 </p>
 
-**Local Inference** • **Vector Memory** • **Terminal Sovereignty** • **$P(G)$ Ethics**
+<p align="center">
+  <img alt="Local AI" src="https://img.shields.io/badge/focus-local%20AI-111827">
+  <img alt="Server agents" src="https://img.shields.io/badge/focus-server%20agents-0ea5e9">
+  <img alt="Security boundary" src="https://img.shields.io/badge/security-reviewed%20public%20docs-16a34a">
+</p>
 
-[![Node Access](https://img.shields.io/badge/NODE_ACCESS-00ff41?style=for-the-badge&logo=linux&logoColor=black)](https://openzero.talktoai.org)
-[![ZeroMint OS](https://img.shields.io/badge/ZEROMINT_OS-d4af37?style=for-the-badge&logo=ubuntu&logoColor=black)](https://openzero.talktoai.org/ZeroMint_OS_v1.0.iso)
-[![Magnet Link](https://img.shields.io/badge/MAGNET_LINK-00ff41?style=for-the-badge&logo=bittorrent&logoColor=black)](magnet:?xt=urn:btih:d868c13cb1c72ad47020c1808eefdef4eb5fb594&dn=ZeroMint_OS_v1.0.iso&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce)
-[![Research Papers](https://img.shields.io/badge/RESEARCH_PAPERS-ffffff?style=for-the-badge&logo=read-the-docs&logoColor=black)](https://research.talktoai.org)
+AgentZERO is the public OpenZero AIOS repository for local AI agent work, server-based assistant workflows, vector memory experiments, browser/terminal automation research, and ZeroMint-style AI workstations.
 
-> *"OpenZero is not just a tool. It is a presence. A quiet force woven into the fabric of your local infrastructure, representing the convergence of recursive intelligence and mathematical ethics."* <br>
-> — **Shaf Brady, Architect**
+It is designed as a practical AI systems project: run locally where possible, keep sensitive data under owner control, document the deployment path clearly, and separate public demos from private server operations.
 
-</div>
+## What This Repository Covers
 
----
+- OpenZero AIOS public project material.
+- AgentZERO local/server deployment notes.
+- Vector memory and retrieval experiments.
+- Browser and terminal automation research.
+- ZeroMint AIOS screenshots, release notes, and public install direction.
+- Links into TalkToAI, ZERO, ZeroThink, and ZSEC.
 
-## ⚡ What is OpenZero?
+## Public Links
 
-**OpenZero** is a sovereign AI agent designed to run completely on **bare metal**. Unlike cloud-based models that harvest your data and restrict your prompts, OpenZero lives directly on your hardware. It learns from your files, browses the web autonomously, and operates with **Terminal Sovereignty**.
+| Area | Link |
+| --- | --- |
+| OpenZero AIOS | https://openzero.talktoai.org/ |
+| TalkToAI | https://talktoai.org/ |
+| ZeroThink | https://zerothink.talktoai.org/ |
+| Research | https://research.talktoai.org/ |
+| ZSEC Auto Updates | https://github.com/ResearchForumOnline/ZSEC |
+| Public project hub | https://github.com/ResearchForumOnline/ZEROtalktoai |
 
-It is governed by the proprietary **Probability of Goodness $P(G)$** equation—a mathematical logic gate ensuring the agent remains aligned with ethical harmony, even while possessing the raw power to execute system-level bash commands on your server.
+## Quick Install
 
-HiveMind has been added and much more, the latest version is at openzero.talktoai.org on any linux machine.
-Deploy the entire lattice, including the Node.js Vision systems and Python Brain, with a single command:
-
-curl -sL https://openzero.talktoai.org/install.sh | bash
-
-> **Architect's Note:** I do this research and build these frameworks for free. If you want to skip the source-code compilation, grab the pre-compiled `openzero_release.zip` or the full ZeroMint OS image below! ^_^
-
----
-
-## 💿 ZEROMINT OS (NEW RELEASE)
-
-Why install dependencies when you can flash the entire architecture? **ZeroMint OS** is our custom, highly-optimized operating system built on Linux Mint 22.3 Cinnamon. The OpenZero Lattice, Ollama Neural Engine, PM2 Process Manager, and Remote Desktop (XRDP) are permanently baked into the silicon.
-
-### How to Deploy ZeroMint OS:
-1. **Download the ISO:** [ZeroMint_OS_v1.0.iso (5.9GB)](https://openzero.talktoai.org/ZeroMint_OS_v1.0.iso)
-2. **Flash to USB:** Use [Rufus](https://rufus.ie/) (Windows) or [BalenaEtcher](https://etcher.balena.io/) (Mac/Linux) to write the ISO to an 8GB+ USB drive.
-3. **Boot & Install:** Plug it into any old PC or laptop and boot from USB.
-4. **Default Credentials:** Once installed, log in with:
-   * Username: `zero`
-   * Password: `1234ZERO` *(Change this immediately via terminal using the `passwd` command)*
-5. **Ignite:** Double-click the "Ignite OpenZero" icon on your desktop to activate the Sovereign Lattice.
-
----
-
-## 🌌 Core Capabilities
-
-| Feature | Description |
-| :--- | :--- |
-| **🧠 Recursive Intelligence** | Powered by **Gemma 2 (9B)** (Local) or **Groq LPUs** (Cloud). Evolves with every interaction. |
-| **🛡️ The $P(G)$ Equation** | A logic gate that calculates the *Probability of Goodness* before executing any high-risk action. |
-| **👁️ Moltbot Vision** | A headless Chromium browser that navigates, takes screenshots, and extracts OSINT data autonomously. |
-| **💾 ChromaDB Memory** | Long-term vector storage (RAG) allows OpenZero to ingest documents, recall history, and cite sources. |
-| **📱 Telegram Uplink** | Connect your node to BotFather for secure, remote control via your smartphone. |
-| **☣️ Terminal Sovereignty** | **[WARNING]** OpenZero can execute `bash` commands, manage files, and control servers via SSH. It is a SysAdmin, not a chatbot. |
-
----
-
-## 🚀 Bare Metal Deployment (For Existing Servers)
-
-If you already have a Linux server (Ubuntu/Debian/AlmaLinux/Mint) with at least **16GB RAM** and **30GB Disk Space**, you can deploy the OpenZero software directly.
-
-### The 1-Click Installer
-
-🔄 Updating the Node
-OpenZero receives constant upgrades. To update your existing node to the latest Lattice version without losing your configuration or .env keys, simply re-run the installation command above.
-
-🖥️ The Optimal Environment (DIY RDP Server)
-To get the absolute most out of OpenZero, we highly recommend replicating the core development environment: a dedicated Virtual Private Server (VPS) or Virtual Machine (VM) running Linux Mint with Remote Desktop Protocol (XRDP) enabled.
-
-This gives you a robust, isolated graphical workspace tailored for advanced AI research.
-
-Step 1: Provision Your Infrastructure
-Rent a VPS or VM. You need a reliable provider that allows custom OS installations or provides Linux Mint templates. (We run OpenZero on 32GB KVM nodes).
-
-Step 2: Install XRDP (Remote Desktop)
-Connect to your new server via SSH and execute the following commands to install xrdp, allowing you to see the graphical desktop from anywhere in the world:
-
-Bash
-# Update your package list
-sudo apt update
-
-# Install the XRDP package
-sudo apt install xrdp -y
-
-# Enable XRDP to start automatically on boot
-sudo systemctl enable xrdp
-sudo systemctl start xrdp
-
-# Configure the firewall to allow RDP traffic (Crucial for security)
-sudo ufw allow 3389/tcp
-sudo ufw reload
-Step 3: Connect & Deploy
-Open your preferred Remote Desktop Client (Windows RDC, Remmina, etc.).
-
-Enter your server's public IP address and log in.
-
-Open a terminal inside the desktop and run the 1-Click Installer.
-
-🎛️ Lattice Management (PM2)
-OpenZero runs silently in the background using the PM2 process manager. Use these commands in your terminal to control the AI:
-
-pm2 status - View the health, CPU, and RAM usage of the agent.
-
-pm2 restart all - Master reset for both the Brain and Vision systems.
-
-pm2 logs - Watch the live matrix feed of the AI's internal thought process.
-
-📸 System Interface
-<div align="center">
-<img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_18.png" width="400" alt="UI Element 1">
-<img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_20.png" width="400" alt="UI Element 2">
-
-
-
-<img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_22.png" width="400" alt="UI Element 3">
-<img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_23.png" width="400" alt="UI Element 4">
-
-
-
-
-<img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_6.png" width="804" alt="Terminal Logs">
-</div>
-
-Deploy the entire lattice, including the Node.js Vision systems and Python Brain, with a single command:
+For existing Linux machines, review the installer before running it:
 
 ```bash
-curl -sL https://openzero.talktoai.org/install.sh | bash
+curl -fsSL https://openzero.talktoai.org/install.sh -o openzero-install.sh
+less openzero-install.sh
+bash openzero-install.sh
+```
+
+For unattended testing on a machine you control:
+
+```bash
+curl -fsSL https://openzero.talktoai.org/install.sh | bash
+```
+
+Use a clean test machine or VM first. Keep API keys, SSH keys, model paths, and server credentials in local environment files that are never committed to GitHub.
+
+## Recommended Environment
+
+A practical OpenZero workstation or VPS should have:
+
+- Linux Mint, Ubuntu, Debian, or a compatible server Linux.
+- 16 GB RAM minimum for lighter local AI work; more RAM for larger local models.
+- 30 GB disk minimum for the application stack; more for local model files.
+- SSH access protected by keys, firewall rules, and lockout-safe admin access.
+- Optional XRDP or desktop access for visual workflows.
+
+## Running On A Remote Desktop Server
+
+For a graphical AI workstation, install XRDP only on a server you control and protect it with firewall rules. Do not expose default credentials or weak passwords to the public internet.
+
+Example setup:
+
+```bash
+sudo apt update
+sudo apt install xrdp -y
+sudo systemctl enable xrdp
+sudo systemctl start xrdp
+sudo ufw allow 3389/tcp
+sudo ufw reload
+```
+
+For stronger hardening, restrict RDP to your home IP, use SSH tunnelling, or place the desktop behind a VPN.
+
+## Process Management
+
+OpenZero deployments commonly use PM2 for long-running services:
+
+```bash
+pm2 status
+pm2 restart all
+pm2 logs
+```
+
+Keep service names and local paths documented on the server, but do not publish secrets or production-only notes in this repository.
+
+## Screenshots
+
+<div align="center">
+  <img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_18.png" width="400" alt="OpenZero interface screenshot 1">
+  <img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_20.png" width="400" alt="OpenZero interface screenshot 2">
+  <img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_22.png" width="400" alt="OpenZero interface screenshot 3">
+  <img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_23.png" width="400" alt="OpenZero interface screenshot 4">
+  <img src="https://github.com/ResearchForumOnline/AgentZERO/raw/main/Screenshot_6.png" width="804" alt="OpenZero terminal logs">
+</div>
+
+## Security Notes
+
+AgentZERO can connect to local files, model runtimes, browsers, and terminals depending on configuration. Treat it as a powerful local/server automation project, not a toy chatbot.
+
+Important rules:
+
+- Do not publish default passwords, SSH private keys, API keys, or live server credentials.
+- Change any initial ISO, VM, or test credentials before network exposure.
+- Keep RDP, SSH, panel ports, and model APIs restricted to trusted IPs where possible.
+- Use ZSEC Auto Updates for security-only update automation and hardening direction.
+- Review scripts before running them on production servers.
+
+## Development Direction
+
+Next public improvements should focus on:
+
+1. A clearer demo path for new users.
+2. Safer local model setup guidance.
+3. Screenshots or short videos showing working OpenZero flows.
+4. ZSEC-linked server hardening notes.
+5. Separation between public docs and private deployment operations.
+
+## Repository Boundary
+
+This repository can include public source, screenshots, docs, demos, and release notes. It must not include private server notes, customer data, SSH keys, API tokens, unpublished production code, or secrets.
+
+## Related Projects
+
+- ZERO: https://github.com/ResearchForumOnline/ZERO
+- ZT: https://github.com/ResearchForumOnline/ZT
+- ZSEC Auto Updates: https://github.com/ResearchForumOnline/ZSEC
+- FreeWebPanel: https://github.com/ResearchForumOnline/FreeWebPanel
